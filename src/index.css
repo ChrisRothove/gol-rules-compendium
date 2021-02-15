@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("http://miami007.b1.jcink.com/uploads/miami007/sinnerBG.png");
+  background: url("./components/sinnerBG.png");
 }
 
 code {
