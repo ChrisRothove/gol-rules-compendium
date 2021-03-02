@@ -1,0 +1,21 @@
+{
+	"dataTemp": {
+		"scope": "javascript, typescript",
+		"prefix": ["dataTemp"],
+		"body": [
+		"{",
+		"keywords: [$1],",
+		"notation: ${2:false},",
+		"header: <$3>$4</$3>,",
+		"content: (",
+			"<div>",
+				"<p>",
+					"$0",
+				"</p>",
+			"</div>",
+		"),",
+		"},",
+		],
+		"description": "Template for Data entries"
+	}
+}

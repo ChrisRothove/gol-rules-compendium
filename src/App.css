@@ -44,6 +44,24 @@ input[type="text"] {
   width: 100%;
 }
 
+#title {
+  font-family: "fjalla one", impact;
+  text-align: center;
+}
+
+pre {
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+}
+
+.codeBlock {
+  padding: 10px;
+  border: 1px solid darkgrey;
+  border-radius: 8px;
+  background-color: lightgrey;
+}
+
 .hidden {
   display: none;
 }

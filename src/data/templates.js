@@ -19,9 +19,10 @@ const templates = [
           Javascript at the bottom of the template, or the auto adjustment of
           the boxes will not function properly.",
         </p>
-        <p>
-          {`
-    [dohtml]
+        <p className="codeBlock">
+          <pre>
+            <code>
+              {`[dohtml]
     <div id="membergroup">
     <div id="uglysweaterz">
     <div class="back">
@@ -96,7 +97,7 @@ const templates = [
     <b>Description of Ability:</b> here </br>
     | Tier: # | MP Cost: # | Range: # | Damage Stat: STR/MAG </p>
     </div></div></div>
-     
+    
     <div id="abilities">
        <div class="main-name-2">ABILITIES</div>
        <div class="main-ans"><div class="main-text" id="abilityText">
@@ -135,7 +136,7 @@ const templates = [
     <p><b>Ability Name:</b> Ability Description
     <br>| Tier | Cost | Stat |
        </div></div></div>
-     
+    
     <div id="links">
        <div class="main-name-2">D-LINKS</div>
        <div class="main-ans"><div class="main-text" id="linkText">
@@ -157,9 +158,9 @@ const templates = [
     //DO NOT EDIT BELOW THIS POINT
     function statHide() {
       //get id of button
-      var statBox = document.getElementById("statBox");
+      const statBox = document.getElementById("statBox");
       //get the id of the box to hide
-      var stats = document.getElementById("stats");
+      const stats = document.getElementById("stats");
       //if stats are hidden, display them.
       if (stats.style.display === "none") {
         stats.style.display = "block";
@@ -175,9 +176,9 @@ const templates = [
     
     function abilityHide() {
       //get id of button
-      var abBox = document.getElementById("abBox");
+      const abBox = document.getElementById("abBox");
       //get the id of the box to hide
-      var abilities = document.getElementById("abilities");
+      const abilities = document.getElementById("abilities");
       //if stats are hidden, display them.
       if (abilities.style.display === "none") {
         abilities.style.display = "block";
@@ -193,9 +194,9 @@ const templates = [
     
     function formHide() {
       //get id of button
-      var formBox = document.getElementById("formBox");
+      const formBox = document.getElementById("formBox");
       //get the id of the box to hide
-      var forms = document.getElementById("forms");
+      const forms = document.getElementById("forms");
       //if stats are hidden, display them.
       if (forms.style.display === "none") {
         forms.style.display = "block";
@@ -211,9 +212,9 @@ const templates = [
     
     function linkHide() {
       //get id of button
-      var linkBox = document.getElementById("linkBox");
+      const linkBox = document.getElementById("linkBox");
       //get the id of the box to hide
-      var links = document.getElementById("links");
+      const links = document.getElementById("links");
       //if stats are hidden, display them.
       if (links.style.display === "none") {
         links.style.display = "block";
@@ -229,9 +230,9 @@ const templates = [
     
     function passiveHide() {
       //get id of button
-      var passiveBox = document.getElementById("passiveBox");
+      const passiveBox = document.getElementById("passiveBox");
       //get the id of the box to hide
-      var passives = document.getElementById("passives");
+      const passives = document.getElementById("passives");
       //if stats are hidden, display them.
       if (passives.style.display === "none") {
         passives.style.display = "block";
@@ -271,76 +272,91 @@ const templates = [
       //change color to white
       linkBox.style.color = "#fff";
     }
-    </script>`}
-          [/dohtml]`
+    </script>
+          [/dohtml]`}
+            </code>
+          </pre>
         </p>
       </>
     ),
   },
   {
     keywords: ["templates", "battle profile", "companions", "summons"],
-    header: "Ally BP Template",
-    content:
-      "This is the code for both applying for and posting summons in the Battle Profile. This template is not dynamic, pretty straight forward to use.",
-    code: `[dohtml]
-    <div id="membergroup">
-    <div id="uglypetsweaterz">
-    <div class="back">
-    <div class="name">Ally</div>
-    <div class="body">
-       <div class="image"><img src=""></div>
-       <div class="right">
-         <div class="info-name1">TYPE</div>
-         <div class="info-ans">Summon or Companion</div>
-         <div class="info-name2">SPECIES</div>
-         <div class="info-ans">Here</div>
-         <div class="info-name1">Rank</div>
-         <div class="info-ans"># or type</div>
+    header: <h2>Ally BP Template</h2>,
+    content: (
+      <>
+        <p>
+          This is the code for both applying for and posting summons in the
+          Battle Profile. This template is not dynamic, pretty straight forward
+          to use.
+        </p>
+        <p className="codeBlock">
+          <pre>
+            <code>
+              {`[dohtml]
+      <div id="membergroup">
+      <div id="uglypetsweaterz">
+      <div class="back">
+      <div class="name">Ally</div>
+      <div class="body">
+         <div class="image"><img src=""></div>
+         <div class="right">
+           <div class="info-name1">TYPE</div>
+           <div class="info-ans">Summon or Companion</div>
+           <div class="info-name2">SPECIES</div>
+           <div class="info-ans">Here</div>
+           <div class="info-name1">Rank</div>
+           <div class="info-ans"># or type</div>
+         </div>
+         <div class="main-name">STATISTICS</div>
+         <div class="main-ans"><div class="main-text">
+      <h1>independent</h1>
+      
+      <b>Strength (STR):</b> here <br>
+      <b>Magic (MAG):</b> here<br>
+      <b>Defense (DEF):</b> here<br>
+      <b>Agility (AGL):</b> here<br>
+      </br>
+      <h1>dependent</h1>
+      
+      <b>Evasion (EV):</b> here <br>
+      <b>HP:</b> (Companion Only)<br>
+      <b>Team Gauge (TG):</b> (Companion Only)<br>
+      <b>Summon Gauge (SG):</b> (summon Only) <br>
+      </br>
+         </div></div>
+      
+         <div class="main-name-2">ABILITIES</div>
+         <div class="main-ans"><div class="main-text">
+      <b>Ability Name:</b> here </br>
+      <b>Description of Ability:</b> Ability description </br>
+      <b>| Tier: # Range | Cost: # | Damage Stat: --- </b> </p>
+      
+      <b>Ability Name:</b> here </br>
+      <b>Description of Ability:</b> Ability description </br>
+      <b>| Tier: # Range | Cost: # | Damage Stat: --- </b> </p>
+      
+      <b>Ability Name:</b> here </br>
+      <b>Description of Ability:</b> Ability description </br>
+      <b>| Tier: # Range | Cost: # | Damage Stat: --- </b> </p>
+      
+      <h1>Team Attack</h1>
+      (Companion Only)
+      <b>Ability Name:</b> here </br>
+      <b>Description of Ability:</b> Ability description </br>
+      <b>| Tier: # Range | Cost: # | Damage Stat: --- </b> </p>
+      
+         </div></div>
        </div>
-       <div class="main-name">STATISTICS</div>
-       <div class="main-ans"><div class="main-text">
-    <h1>independent</h1>
-    
-    <b>Strength (STR):</b> here <br>
-    <b>Magic (MAG):</b> here<br>
-    <b>Defense (DEF):</b> here<br>
-    <b>Agility (AGL):</b> here<br>
-    </br>
-    <h1>dependent</h1>
-    
-    <b>Evasion (EV):</b> here <br>
-    <b>HP:</b> (Companion Only)<br>
-    <b>Team Gauge (TG):</b> (Companion Only)<br>
-    <b>Summon Gauge (SG):</b> (summon Only) <br>
-    </br>
-       </div></div>
-     
-       <div class="main-name-2">ABILITIES</div>
-       <div class="main-ans"><div class="main-text">
-    <b>Ability Name:</b> here </br>
-    <b>Description of Ability:</b> Ability description </br>
-    <b>| Tier: # Range | Cost: # | Damage Stat: --- </b> </p>
-    
-    <b>Ability Name:</b> here </br>
-    <b>Description of Ability:</b> Ability description </br>
-    <b>| Tier: # Range | Cost: # | Damage Stat: --- </b> </p>
-    
-    <b>Ability Name:</b> here </br>
-    <b>Description of Ability:</b> Ability description </br>
-    <b>| Tier: # Range | Cost: # | Damage Stat: --- </b> </p>
-    
-    <h1>Team Attack</h1>
-    (Companion Only)
-    <b>Ability Name:</b> here </br>
-    <b>Description of Ability:</b> Ability description </br>
-    <b>| Tier: # Range | Cost: # | Damage Stat: --- </b> </p>
-    
-       </div></div>
-     </div>
-    </div>
-    </div>
-    </div>
-    [/dohtml]`,
+      </div>
+      </div>
+      </div>
+      [/dohtml]`}
+            </code>
+          </pre>
+        </p>
+      </>
+    ),
   },
 ];
 

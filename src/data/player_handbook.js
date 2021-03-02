@@ -1,13 +1,16 @@
 import React from "react";
-/*  TEMPLATE
-{
-  keywords: [],
-  notation: false,
-  header: "",
-  content: "",
-}
-*/
+
 const playerHandbook = [
+  {
+    keywords: ["player's handbook"],
+    notation: false,
+    header: (
+      <div id="title">
+        <h1>Vital Statistics</h1>
+      </div>
+    ),
+    content: <></>,
+  },
   {
     keywords: ["player's handbook", "notation", "stats"],
     notation: true,
@@ -50,7 +53,17 @@ const playerHandbook = [
     ),
   },
   {
-    keywords: ["player's handbook", "stats", "independent"],
+    keywords: [
+      "player's handbook",
+      "stats",
+      "independent",
+      "defense",
+      "strength",
+      "magic",
+      "agility",
+      "agl",
+      "levelup",
+    ],
     notation: false,
     header: <h2>Independent Stats</h2>,
     content: (
@@ -92,9 +105,23 @@ const playerHandbook = [
       "mp",
       "focus gauge",
       "evasion",
+      "health",
     ],
     notation: false,
     header: <h2>Dependent Stats</h2>,
+    content: <></>,
+  },
+  {
+    keywords: [
+      "player's handbook",
+      "stats",
+      "dependent",
+      "hp",
+      "health",
+      "defense",
+    ],
+    notation: false,
+    header: <></>,
     content: (
       <div>
         <p>
@@ -116,6 +143,15 @@ const playerHandbook = [
           this number, your max HP changes for each level you currently have, as
           if your DEF was always that number.
         </p>
+      </div>
+    ),
+  },
+  {
+    keywords: ["player's handbook", "stats", "dependent", "mp", "magic points"],
+    notation: false,
+    header: <></>,
+    content: (
+      <div>
         <p>
           <strong>Magic Points (MP)</strong> | Determines how much magical
           stamina you have to continue using skills/spells. Your MP is depleted
@@ -137,6 +173,15 @@ const playerHandbook = [
           more MP for each level you have as if your MAG had always been that
           high.
         </p>
+      </div>
+    ),
+  },
+  {
+    keywords: ["player's handbook", "stats", "dependent", "evasion"],
+    notation: false,
+    header: <></>,
+    content: (
+      <div>
         <p>
           <strong>Evasion (EV)</strong> | Evasion is a set number which an enemy
           or player must roll on a dice in order for their attack to hit;
@@ -146,6 +191,15 @@ const playerHandbook = [
         <p align="center">
           <strong>Your evasion stat's set number is 3 + your AGL score.</strong>
         </p>
+      </div>
+    ),
+  },
+  {
+    keywords: ["player's handbook", "stats", "dependent", "focus gauge"],
+    notation: false,
+    header: <></>,
+    content: (
+      <div>
         <p>
           <strong>Focus Gauge (Focus)</strong> | Focus gauges are used to cast
           special skills and abilities that alter the flow of combat. These are
@@ -158,7 +212,14 @@ const playerHandbook = [
     ),
   },
   {
-    keywords: ["player's handbook", "stats", "buffs"],
+    keywords: [
+      "player's handbook",
+      "stats",
+      "buffs",
+      "passive",
+      "equipment",
+      "bonus",
+    ],
     notation: false,
     header: <h2>Stat Buffs: Overview</h2>,
     content: (
@@ -181,7 +242,7 @@ const playerHandbook = [
     ),
   },
   {
-    keywords: ["player's handbook", "stats", "hp", "mp", "items"],
+    keywords: ["player's handbook", "stats", "hp up", "mp up", "items"],
     notation: false,
     header: <h2>HP and MP up</h2>,
     content: (
@@ -190,6 +251,76 @@ const playerHandbook = [
         your Max of either one of these stats permanently. You may only use a
         max of 5 of each of these on a given character.
       </p>
+    ),
+  },
+  {
+    keywords: ["player's handbook"],
+    notation: false,
+    header: (
+      <div id="title">
+        <h1>Actions in Battle</h1>
+      </div>
+    ),
+    content: <></>,
+  },
+  {
+    keywords: [
+      "battle",
+      "actions",
+      "basic attack",
+      "guard",
+      "cover",
+      "items",
+      "dodge roll",
+      "break",
+      "break time",
+    ],
+    notation: true,
+    header: <></>,
+    content: (
+      <div>
+        <p>
+          In your post you will describe the actions you are taking, and at the
+          end of the post, you’ll include a dice roll that will be modified by
+          the appropriate modifiers, for the appropriate skills you are using.
+          For the sake of balancing, each turn your character is only allowed
+          two actions. Most of the time, these actions will be abilities which
+          are all broken down in the Abilities and Focus Abilities section of
+          this guide. There are, however, some actions which can be made by
+          anyone, and do not cost MP or Focus energy to use.
+        </p>
+        <ul>
+          <li>Perform a Basic Attack with your equipped weapon</li>
+          <li>Guard against incoming attacks</li>
+          <li>Cover an ally</li>
+          <li>Use an Item on yourself or an ally.</li>
+          <li>Dodge Roll out of the way of an attack.</li>
+          <li>Take a break to quicken the regeneration of your resources.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    keywords: ["battle", "basic attack", "abilities"],
+    notation: false,
+    header: <h2>Basic Attacks and Abilities</h2>,
+    content: (
+      <div>
+        <p>
+          When you make an attack, you’ll need to roll a dice to see if you
+          successfully hit the target. To do so, you’ll roll using the dice
+          button and list your appropriate modifiers. The roll to hit a target
+          is always the same regardless of whether you're using a basic attack
+          or an ability. If your roll is greater than or equal to your target's
+          EV, you succeed in hitting them, and deal damage.
+        </p>
+        <p align="center">
+          <strong>The roll to hit is 1d10 + your Agility modifier.</strong>
+        </p>
+        <p align="center" className="codeBlock">
+          [roll]1d10+4[/roll]
+        </p>
+      </div>
     ),
   },
 ];

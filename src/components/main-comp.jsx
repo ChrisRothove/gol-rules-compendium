@@ -3,19 +3,19 @@ import { useState } from "react";
 import Form from "./form";
 import Textbody from "./text-body";
 import {
-  templates,
   playerHandbook,
   dungeonMasterGuide,
   abilityGuide,
   sampleAbilities,
+  templates,
 } from "../data/main";
 
 const allArticles = [
-  ...templates,
   ...playerHandbook,
   ...dungeonMasterGuide,
   ...abilityGuide,
   ...sampleAbilities,
+  ...templates,
 ];
 
 function Main() {
