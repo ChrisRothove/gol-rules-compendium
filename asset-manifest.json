@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/gol-rules-compendium/static/css/main.674ec5ce.chunk.css",
-    "main.js": "/gol-rules-compendium/static/js/main.445c8d9a.chunk.js",
-    "main.js.map": "/gol-rules-compendium/static/js/main.445c8d9a.chunk.js.map",
+    "main.css": "/gol-rules-compendium/static/css/main.7b1d1bfb.chunk.css",
+    "main.js": "/gol-rules-compendium/static/js/main.c387a83e.chunk.js",
+    "main.js.map": "/gol-rules-compendium/static/js/main.c387a83e.chunk.js.map",
     "runtime-main.js": "/gol-rules-compendium/static/js/runtime-main.d02bb8f0.js",
     "runtime-main.js.map": "/gol-rules-compendium/static/js/runtime-main.d02bb8f0.js.map",
     "static/js/2.e24c201e.chunk.js": "/gol-rules-compendium/static/js/2.e24c201e.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.a0edc7f8.chunk.js": "/gol-rules-compendium/static/js/3.a0edc7f8.chunk.js",
     "static/js/3.a0edc7f8.chunk.js.map": "/gol-rules-compendium/static/js/3.a0edc7f8.chunk.js.map",
     "index.html": "/gol-rules-compendium/index.html",
-    "static/css/main.674ec5ce.chunk.css.map": "/gol-rules-compendium/static/css/main.674ec5ce.chunk.css.map",
+    "static/css/main.7b1d1bfb.chunk.css.map": "/gol-rules-compendium/static/css/main.7b1d1bfb.chunk.css.map",
     "static/js/2.e24c201e.chunk.js.LICENSE.txt": "/gol-rules-compendium/static/js/2.e24c201e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/gol-rules-compendium/static/media/sinnerBG.22d74019.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d02bb8f0.js",
     "static/js/2.e24c201e.chunk.js",
-    "static/css/main.674ec5ce.chunk.css",
-    "static/js/main.445c8d9a.chunk.js"
+    "static/css/main.7b1d1bfb.chunk.css",
+    "static/js/main.c387a83e.chunk.js"
   ]
 }
